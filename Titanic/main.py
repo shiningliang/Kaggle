@@ -18,8 +18,9 @@ from xgboost import XGBClassifier
 from sklearn.metrics import precision_score
 import warnings
 
-train_df = pd.read_csv('data/train.csv')
-test_df = pd.read_csv('data/test.csv')
+data = r'E:\OpenSourceDatasetCode\Dataset\Titiannic Disaster'
+train_df = pd.read_csv(data + r'\train.csv')
+test_df = pd.read_csv(data + r'\test.csv')
 combine_df = pd.concat([train_df, test_df])
 
 # NameLength
